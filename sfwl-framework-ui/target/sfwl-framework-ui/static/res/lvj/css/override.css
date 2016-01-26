@@ -1,0 +1,128 @@
+/***************************************************
+* @name: override.css
+* @function: 样式重新定义
+***************************************************/
+ 
+/**
+ * @name: override.css;
+ * @function: 样式重新定义;
+ **/
+ 
+/**easyui tab页中overflow出现滚动条*/ 
+.tabs-panels ,.tabs-panels-noborder .panel {
+	overflow: auto;
+} 
+ 
+/**easyui linkbutton的高度**/
+.l-btn-text{
+	line-height : 20px
+}
+.l-btn {
+	background: #FAFAFA;
+	color: black;
+	border: 1px solid #FAFAFA;
+	filter:progid:DXImageTransform.Microsoft.Gradient(enabled=false) ;
+}
+
+/**自定义布局的样式**/
+.ui-layout-pane { 
+	padding: 0px;
+}
+
+.tabs {
+	padding-left: 0px;
+	border-width: 0px 0px 0px 0px;
+}
+
+/* Grid提供元数据的Table默认不显示，避免出现卡屏 */
+.sns-grid{display:none;}
+.sns-editgrid{display:none;}
+.sns-treegrid{display:none;}
+
+.Wdate {
+  box-sizing: border-box;
+  border: #999 1px solid;
+  height: 20px;
+  width: 115px;
+  padding: 0 0 0 0;
+  margin:0 0 0 0;
+  background: #fff url(../image/datepick.png) no-repeat right;
+}
+
+.tabs-header{
+	background-color: #FFFFFF;
+}
+
+.l-btn {
+	background: #FFFFFF;
+}
+.panel-body {
+	background-color:  #FFFFFF;
+}
+
+input.validatebox-invalid {
+	border-color: #ffa8a8;
+	background-color: #fff3f3;
+	color: #404040;
+}
+.validatebox-invalid {
+	border-color: #ffa8a8;
+	background-color: #fff3f3;
+	color: #404040;
+}
+
+.textbox-invalid {
+	border-color: #ffa8a8 !important;
+	background-color: #fff3f3 !important;
+}
+
+.head-btn-icon {
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	cursor:pointer
+}
+
+.dg-proxy {
+	border: 1px solid #ccc;
+	width: 100px;
+	background: #fafafa;
+}
+
+.dg-proxy-error {
+	border: 1px solid #ffa8a8;
+	width: 100px;
+	background: #fafafa;
+}
+
+.dg-proxy-right {
+	border: 1px solid #ccc;
+	width: 100px;
+	background: #fafafa;
+}
+
+.textbox .textbox-text {
+	padding: 0px;
+}
+
+div.jbox .jbox-button {
+	cursor : auto
+}
+.uploadify-button{
+	border-radius : 3px;
+}
+
+.uploadify-queue-item {
+	background-color: white;
+}
+
+.btn {
+	border: 0;
+	background: #4D77A7;
+	color: #FFF;
+	font-size: 12px;
+	padding: 4px 10px;
+	line-height: 14px;
+	display: block;
+	width: 60px;
+}

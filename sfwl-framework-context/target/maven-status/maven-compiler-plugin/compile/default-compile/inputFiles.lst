@@ -1,0 +1,16 @@
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\exception\PermissionBaseException.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\permissionglobalcache\PermissionGlobalCacheHolder.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\operatethreadcache\DefaultOperateInfo.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\paginationthreadcache\PageThreadCacheHolder.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\userglobalcache\UserGlobalCacheHolder.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\paginationthreadcache\PageDataModel.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\exception\BusinessBaseException.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\permissionglobalcache\PermissionHolder.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\paginationthreadcache\PageInfoModel.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\exception\AppBaseException.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\exception\DaoBaseException.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\exception\ExceptionConfigs.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\operatethreadcache\OperateThreadCacheHolder.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\userglobalcache\DefaultUserInfo.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\exception\OtherBaseException.java
+O:\MavenProject\sfwl-aggregator\sfwl-framework-context\src\main\java\com\sfwl\framework\context\permissionglobalcache\PermissionInfo.java

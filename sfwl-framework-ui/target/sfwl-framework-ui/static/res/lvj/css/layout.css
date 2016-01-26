@@ -1,0 +1,95 @@
+/***************************************************
+* @name: layout.css
+* @function: 布局样式
+***************************************************/
+
+/* 工具栏 */
+.sns-toolbar {
+	border: 1px solid #C3D9E0;
+	background-color: #FAFAFA;
+}
+
+/* 主页面样式 */
+.sns-main-page {
+	height: 100%;
+	widht: 100%;
+}
+
+/* 详情页面样式 */
+.sns-detail-page {
+	height: 100%;
+	width: 100%;
+    display: none;
+}
+
+
+
+/* 页面容器 */
+.sns-container{position: relative; width:100%; height:100%; }
+.sns-container .sns-extend{position: absolute; overflow:visible; left: 0px; bottom: 0px; right:0px;}
+
+.after-toolbar {top: 26px}
+.after-toolbar-row1 {top: 52px}
+.after-toolbar-row2 {top: 80px}
+.after-toolbar-row3 {top: 108px}
+.after-toolbar-row4 {top: 136px}
+.after-toolbar-row5 {top: 164px}
+.after-toolbar-row6 {top: 192px}
+.after-toolbar-row7 {top: 220px}
+.after-toolbar-row8 {top: 248px}
+.after-toolbar-row9 {top: 276px}
+.after-toolbar-row10 {top: 304px}
+.after-toolbar-row11 {top: 332px}
+.after-toolbar-row12 {top: 360px}
+.after-toolbar-row13 {top: 388px}
+.after-toolbar-row14 {top: 416px}
+.after-toolbar-row15 {top: 444px}
+
+.after-toolbar-tabrow1 {top: 82px}
+.after-toolbar-tabrow2 {top: 110px}
+.after-toolbar-tabrow3 {top: 138px}
+.after-toolbar-tabrow4 {top: 166px}
+.after-toolbar-tabrow5 {top: 194px}
+.after-toolbar-tabrow6 {top: 222px}
+.after-toolbar-tabrow7 {top: 250px}
+.after-toolbar-tabrow8 {top: 278px}
+.after-toolbar-tabrow9 {top: 306px}
+.after-toolbar-tabrow10 {top: 334px}
+.after-toolbar-tabrow11 {top: 362px}
+.after-toolbar-tabrow12 {top: 390px}
+.after-toolbar-tabrow13 {top: 418px}
+.after-toolbar-tabrow14 {top: 446px}
+.after-toolbar-tabrow15 {top: 474px}
+
+.after-row1 {top: 28px}
+.after-row2 {top: 56px}
+.after-row3 {top: 84px}
+.after-row4 {top: 112px}
+.after-row5 {top: 140px}
+.after-row6 {top: 168px}
+.after-row7 {top: 196px}
+.after-row8 {top: 224px}
+.after-row9 {top: 252px}
+.after-row10 {top: 280px}
+.after-row11 {top: 308px}
+.after-row12 {top: 336px}
+.after-row13 {top: 364px}
+.after-row14 {top: 392px}
+.after-row15 {top: 420px}
+
+
+.sns-tabrow1{height:58px; overflow:auto;}
+.sns-tabrow2{height:86px; overflow:auto;}
+.sns-tabrow3{height:114px; overflow:auto;}
+.sns-tabrow4{height:142px; overflow:auto;}
+.sns-tabrow5{height:170px; overflow:auto;}
+.sns-tabrow6{height:198px; overflow:auto;}
+.sns-tabrow7{height:226px; overflow:auto;}
+.sns-tabrow8{height:254px; overflow:auto;}
+.sns-tabrow9{height:282px; overflow:auto;}
+.sns-tabrow10{height:310px; overflow:auto;}
+.sns-tabrow11{height:338px; overflow:auto;}
+.sns-tabrow12{height:366px; overflow:auto;}
+.sns-tabrow13{height:394px; overflow:auto;}
+.sns-tabrow14{height:422px; overflow:auto;}
+.sns-tabrow15{height:450px; overflow:auto;}

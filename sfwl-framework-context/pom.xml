@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sfwl</groupId>
+		<artifactId>sfwl-aggregator</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>sfwl-framework-context</artifactId>
+	<name>sfwl-framework-context</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<sfwl-plugin-ehcache.version>0.0.1</sfwl-plugin-ehcache.version>
+		<sfwl-plugin-threadcache.version>0.0.1</sfwl-plugin-threadcache.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.sfwl</groupId>
+			<artifactId>sfwl-plugin-ehcache</artifactId>
+			<version>${sfwl-plugin-ehcache.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sfwl</groupId>
+			<artifactId>sfwl-plugin-threadcache</artifactId>
+			<version>${sfwl-plugin-threadcache.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		
+		<!-- 格式化对象，方便输出日志 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.41</version>
+		</dependency>
+		
+			<!-- 语言包 -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+		<!-- Logback（开始） -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.logback-extensions</groupId>
+			<artifactId>logback-ext-spring</artifactId>
+			<version>0.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-ext</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+		<!-- Logback（结束） -->
+	</dependencies>
+
+</project>

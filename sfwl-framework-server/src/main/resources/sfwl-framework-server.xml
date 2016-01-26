@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    
+                        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd    
+                        http://www.springframework.org/schema/context    
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd    
+                        http://www.springframework.org/schema/mvc    
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+                        http://www.springframework.org/schema/aop 
+ 						http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                        http://www.springframework.org/schema/tx 
+     					http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+	<!-- 引入配置文件 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 自动扫描 -->
+	<context:component-scan base-package="com.sfwl.*.server.**.unit" />
+	<context:component-scan base-package="com.sfwl.*.server.**.union" />
+
+	<!-- 手动注册服务类 -->
+	<bean id="pageCacheManager"
+		class="com.sfwl.framework.context.pagination.PageCacheManagerImpl" />
+	<bean id="userDetailsManager"
+		class="com.sfwl.framework.context.session.UserDetailsManagerImpl" />
+	<bean id="sessionCacheManager"
+		class="com.sfwl.framework.context.session.SessionCacheManagerImpl" />
+
+
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${driver}" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+		<!-- 初始化连接大小 -->
+		<property name="initialSize" value="${initialSize}"></property>
+		<!-- 连接池最大数量 -->
+		<property name="maxActive" value="${maxActiveAndMaxIdle}"></property>
+		<!-- 连接池最大空闲 -->
+		<property name="maxIdle" value="${maxActiveAndMaxIdle}"></property>
+		<!-- 连接池最小空闲 -->
+		<property name="minIdle" value="${minIdle}"></property>
+		<!-- 获取连接最大等待时间 -->
+		<property name="maxWait" value="${maxWait}"></property>
+		<!-- 校验连接是否有效的语句 -->
+		<property name="validationQuery" value="SELECT 1 from dual"></property>
+		<!-- 空闲连接回收器 -->
+		<property name="testWhileIdle" value="true"></property>
+		<!-- 借出连接时不要测试，否则很影响性能 -->
+		<property name="testOnBorrow" value="false"></property>
+		<!-- 每30秒运行一次空闲连接回收器 -->
+		<property name="timeBetweenEvictionRunsMillis" value="30000"></property>
+		<!-- 池中的连接空闲30分钟后被回收 -->
+		<property name="minEvictableIdleTimeMillis" value="1800000"></property>
+		<!-- 在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+		<property name="numTestsPerEvictionRun" value="3"></property>
+	</bean>
+
+	<!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 自动扫描mapping.xml文件 -->
+		<property name="mapperLocations" value="classpath:com/sfwl/*/*/mapper/*.xml"></property>
+		<property name="plugins">
+			<list>
+				<bean class="com.sfwl.framework.server.daosupport.PageInterceptor">
+					<property name="dialect" value="mysql"></property>
+					<property name="pageCacheManager" ref="pageCacheManager" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+
+	<!-- DAO接口所在包名，Spring会自动查找其下的类 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.sfwl.*.server.**.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+	</bean>
+
+	<!-- 事物配置 -->
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="get*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="find*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="query*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="list*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="search*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED" rollback-for="java.lang.Throwable" />
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- 事物切面 -->
+	<aop:config proxy-target-class="false">
+		<aop:advisor advice-ref="txAdvice" pointcut="execution( * com.sfwl.*.server..*.service.*.*(..))" order="100" />
+		<aop:advisor advice-ref="txAdvice" pointcut="execution( * com.sfwl.framework.server.daosupport.BaseServiceImpl.*(..))" order="100" />
+	</aop:config>
+</beans>  

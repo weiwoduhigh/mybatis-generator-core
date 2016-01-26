@@ -1,0 +1,93 @@
+/***************************************************
+* CSS:base.css
+* 版本:1.0
+****************************************************/
+html{
+	scrollbar-face-color:#eef2fa;
+	scrollbar-arrow-color:5a75a5;
+	scrollbar-track-color:#fff;
+	scrollbar-shadow-color:#fff;
+	scrollbar-highlight-color:#fff;
+	scrollbar-3dlight-color:#bac7db;
+	scrollbar-darkshadow-Color:#bac7db;
+}
+body{
+	margin: 0px;
+	font-family : Microsoft YaHei;
+}
+html,body { height: 100%; padding: 0; margin: 0; }
+body,button,input,label,select,tr,td,textarea {
+	font-size: 12px
+}
+div,form,img,ul,ol,li,p,dl,dt,dd{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+.sns-control input[type='text'][readonly]{background-color:#ebebe4;}
+.sns-control input[class^='combo-input'][readonly]{background-color:#ffffff;}
+.sns-control input[class^='combo-input'][disabled]{background-color:#ebebe4 !important;}
+input[disabled]{
+    background-color: #ebebe4;
+}
+textarea[disabled]{
+    background-color: #ebebe4;
+}
+/* input[type=text]{ */
+/* 	border: 1px solid #999999; */
+/* 	padding:0 0; */
+/* 	-webkit-box-sizing: border-box;  */
+/* 	-moz-box-sizing: border-box; */
+/* 	box-sizing : border-box ; */
+/* } */
+input[type=checkbox] {
+	margin: 0;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing : border-box ;
+	vertical-align: middle;
+}
+/** 数组框 */
+span.textbox.numberbox{
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing : border-box ;
+}
+/** 数值框 */
+.sns-control > span{
+	width : 100% !important;
+}
+/** 数值框 */
+.sns-control > span > input{
+	width : 100% !important;
+}
+
+input, label, select, option, textarea, button, fieldset, legend{
+    font-size:12px;
+    font-family : Microsoft YaHei;
+}
+form{
+	display:inline;
+}
+ul{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	padding:0;
+}
+textarea {
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #999999;
+	box-sizing: border-box;
+	resize:none;
+	overflow: auto;
+}
+
+.combo-input {
+	font-family : Microsoft YaHei;
+}
+

@@ -1,0 +1,16 @@
+com\sfwl\framework\context\paginationthreadcache\PageDataModel.class
+com\sfwl\framework\context\permissionglobalcache\PermissionGlobalCacheHolder.class
+com\sfwl\framework\context\operatethreadcache\OperateThreadCacheHolder.class
+com\sfwl\framework\exception\BusinessBaseException.class
+com\sfwl\framework\exception\ExceptionConfigs.class
+com\sfwl\framework\context\paginationthreadcache\PageThreadCacheHolder.class
+com\sfwl\framework\context\permissionglobalcache\PermissionInfo.class
+com\sfwl\framework\exception\AppBaseException.class
+com\sfwl\framework\exception\PermissionBaseException.class
+com\sfwl\framework\context\operatethreadcache\DefaultOperateInfo.class
+com\sfwl\framework\context\userglobalcache\UserGlobalCacheHolder.class
+com\sfwl\framework\exception\OtherBaseException.class
+com\sfwl\framework\context\paginationthreadcache\PageInfoModel.class
+com\sfwl\framework\exception\DaoBaseException.class
+com\sfwl\framework\context\permissionglobalcache\PermissionHolder.class
+com\sfwl\framework\context\userglobalcache\DefaultUserInfo.class

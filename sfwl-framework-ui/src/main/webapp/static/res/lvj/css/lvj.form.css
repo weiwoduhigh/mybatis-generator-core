@@ -1,0 +1,17 @@
+.lvj-form-div{
+	display:inline-block;
+	width:90px;
+	vertical-align: middle;
+	font-family:'Microsoft YaHei';
+	/* font-size:13px; */
+}
+.lvj-form-div span{
+	float:right;
+}
+.textbox-extra{
+	width:13%;height:23px;
+}
+
+input[type='text'][readonly] {
+    background-color: #ebebe4;
+}

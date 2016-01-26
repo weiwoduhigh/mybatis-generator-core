@@ -1,0 +1,104 @@
+/***************************************************
+* @name: form.css
+* @function: 自定义表单的样式
+***************************************************/
+
+.sns-form-field {
+	float: left;
+}
+
+.sns-form-group {
+	float: left;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.sns-form-field > .sns-label {
+	padding-top: 7px;
+	margin-bottom: 0;
+	text-align: right;
+	width: 80px;
+	float: left;
+	white-space: nowrap;
+	line-height: 7px;
+	margin: 4px 0px 4px 0px;
+}
+
+.sns-form-field > .sns-control {
+	position: relative;
+	padding-right: 5px;
+	padding-left: 5px;
+	height: 20px;
+	width: 115px;
+	float: left;
+	margin: 4px 0px 4px 0px;
+}
+
+
+.sns-col2 {width: 410px;}
+.sns-col3 {width: 625px;}
+.sns-col4 { width: 830px;}
+
+
+.sns-col2 > .sns-control {
+	position: relative;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	width: 320px;
+}
+
+.sns-col3 > .sns-control {
+	position: relative;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	width: 525px;
+}
+
+.sns-col4 > .sns-control {
+	position: relative;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	width: 730px;
+}
+
+
+.sns-row1 {height: 28px; overflow: auto;}
+.sns-row2 {height: 56px; overflow: auto;}
+.sns-row3 {height: 84px; overflow: auto;}
+.sns-row4 {height: 112px; overflow: auto;}
+.sns-row5 {height: 140px; overflow: auto;}
+.sns-row6 {height: 168px; overflow: auto;}
+.sns-row7 {height: 196px; overflow: auto;}
+.sns-row8 {height: 224px; overflow: auto;}
+.sns-row9 {height: 252px; overflow: auto;}
+.sns-row10 {height: 280px; overflow: auto;}
+.sns-row11 {height: 308px; overflow: auto;}
+.sns-row12 {height: 336px; overflow: auto;}
+.sns-row13 {height: 364px; overflow: auto;}
+.sns-row14 {height: 392px; overflow: auto;}
+.sns-row15 {height: 420px; overflow: auto;}
+
+.sns-row1 > .sns-control {height: 20px; overflow: auto;}
+.sns-row2 > .sns-control {height: 48px; overflow: auto;}
+.sns-row3 > .sns-control {height: 76px; overflow: auto;}
+.sns-row4 > .sns-control {height: 104px; overflow: auto;}
+.sns-row5 > .sns-control {height: 132px; overflow: auto;}
+.sns-row6 > .sns-control {height: 160px; overflow: auto;}
+.sns-row7 > .sns-control {height: 188px; overflow: auto;}
+.sns-row8 > .sns-control {height: 216px; overflow: auto;}
+.sns-row9 > .sns-control {height: 244px; overflow: auto;}
+.sns-row10 > .sns-control {height: 272px; overflow: auto;}
+.sns-row11 > .sns-control {height: 300px; overflow: auto;}
+.sns-row12 > .sns-control {height: 328px; overflow: auto;}
+.sns-row13 > .sns-control {height: 356px; overflow: auto;}
+.sns-row14 > .sns-control {height: 384px; overflow: auto;}
+.sns-row15 > .sns-control {height: 412px; overflow: auto;}
+
+
+/** 取消滚动条 */
+.sns-more{overflow-y:hidden!important;}
+
+.cover-full {width: 100%; height: 100%;}

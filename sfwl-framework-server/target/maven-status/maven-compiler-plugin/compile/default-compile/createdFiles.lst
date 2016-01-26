@@ -1,0 +1,8 @@
+com\sfwl\framework\server\daosupport\Recordable.class
+com\sfwl\framework\server\daosupport\BaseServiceImpl.class
+com\sfwl\framework\server\daosupport\DaoException.class
+com\sfwl\framework\server\daosupport\PageInterceptor.class
+com\sfwl\framework\server\daosupport\BaseModel.class
+com\sfwl\framework\server\daosupport\UUIDGenerator.class
+com\sfwl\framework\server\daosupport\BaseService.class
+com\sfwl\framework\server\daosupport\BaseMapper.class
